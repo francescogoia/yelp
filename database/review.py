@@ -1,14 +1,14 @@
+import datetime
 from dataclasses import dataclass
-from datetime import date
+
 
 from database.business import Business
-
 
 @dataclass
 class Review:
     review_id: str
     stars: float
-    review_date: date
+    review_date: datetime.date
     votes_funny: int
     votes_useful: int
     votes_cool: int

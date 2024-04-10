@@ -29,8 +29,12 @@ class Business:
 
     def get_reviews(self):
         if self.reviews is None:
-            # vado a leggerele dal DAOe popolo la lista
-            dao. get_review(self.reviews_id)
+            ## vado a leggerle dal Dao e popolo la lista
+        #    dao.get_review(self.reviews_id)
             pass
         else:
             return self.reviews
+
+
+if __name__ == "__main__":
+    b = Business()

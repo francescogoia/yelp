@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+
 @dataclass
 class User:
     user_id: str
@@ -9,7 +10,6 @@ class User:
     name: str
     average_stars: int
     review_count: int
-
 
     def __eq__(self, other):
         return self.user_id == other.user_id
